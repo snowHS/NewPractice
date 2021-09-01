@@ -11,7 +11,6 @@ target 'NewPractice' do
   pod 'MBProgressHUD'
   pod 'MLLabel'
   pod 'RITLKit'
-  pod 'lottie-ios'
 
   # Pods for NewPractice
 
