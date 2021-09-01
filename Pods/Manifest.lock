@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - lottie-ios (3.2.3)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MLLabel (1.10.5)
@@ -76,6 +77,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - lottie-ios
   - Masonry
   - MBProgressHUD
   - MLLabel
@@ -83,8 +85,9 @@ DEPENDENCIES:
   - SDWebImage
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
+    - lottie-ios
     - Masonry
     - MBProgressHUD
     - MLLabel
@@ -94,6 +97,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MLLabel: d76124055a2205e7f76878e62cd06ba925ba0c97
@@ -101,6 +105,6 @@ SPEC CHECKSUMS:
   RITLViewFrame: 4e38e6333e6b4691c1980c3fcda9ff4d08f0d2c8
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
 
-PODFILE CHECKSUM: 2d8473213a215e7c0072bc56e4af370417789a46
+PODFILE CHECKSUM: 98d61640a7275e715525949bb5352a1092668a2c
 
-COCOAPODS: 1.6.2
+COCOAPODS: 1.10.1

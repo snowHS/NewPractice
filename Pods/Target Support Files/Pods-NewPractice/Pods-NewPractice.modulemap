@@ -1,0 +1,6 @@
+module Pods_NewPractice {
+  umbrella header "Pods-NewPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}
