@@ -11,7 +11,7 @@
 		2D81DEDC7AE923BC99F0F7B4 /* libPods-NewPracticeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D5D60BF7358EB41CFED0A4 /* libPods-NewPracticeTests.a */; };
 		4537A3C2EAC089010DECB881 /* libPods-NewPracticeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBF99557379CA224133F36F /* libPods-NewPracticeUITests.a */; };
 		846AD0A526DF65C800DBDCA6 /* LottieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846AD0A426DF65C800DBDCA6 /* LottieController.m */; };
-		8473306026DF7102000CC708 /* ok.json in Resources */ = {isa = PBXBuildFile; fileRef = 8473305F26DF7102000CC708 /* ok.json */; };
+		8473306226E09F97000CC708 /* ok.json in Resources */ = {isa = PBXBuildFile; fileRef = 8473306126E09F97000CC708 /* ok.json */; };
 		C01D43072325E4780029D847 /* EmojiKBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01D43062325E4780029D847 /* EmojiKBViewController.m */; };
 		C01D436923265A670029D847 /* PPQueuingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C01D434423265A670029D847 /* PPQueuingScrollView.m */; };
 		C01D436A23265A670029D847 /* NSAttributedString+PPAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C01D434523265A670029D847 /* NSAttributedString+PPAddition.m */; };
@@ -109,7 +109,7 @@
 		60DFCE4459F0B00A12B77BA9 /* Pods-NewPracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewPracticeTests.debug.xcconfig"; path = "Target Support Files/Pods-NewPracticeTests/Pods-NewPracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		846AD0A326DF65C800DBDCA6 /* LottieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieController.h; sourceTree = "<group>"; };
 		846AD0A426DF65C800DBDCA6 /* LottieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieController.m; sourceTree = "<group>"; };
-		8473305F26DF7102000CC708 /* ok.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ok.json; sourceTree = "<group>"; };
+		8473306126E09F97000CC708 /* ok.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ok.json; sourceTree = "<group>"; };
 		8FDEFB83261BC6F0177BADE1 /* Pods-NewPracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewPracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-NewPracticeUITests/Pods-NewPracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9DFBD48CC1359707B0DC0FAF /* Pods-NewPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewPractice.release.xcconfig"; path = "Target Support Files/Pods-NewPractice/Pods-NewPractice.release.xcconfig"; sourceTree = "<group>"; };
 		A459935D35B145F2C0717D77 /* Pods-NewPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewPractice.debug.xcconfig"; path = "Target Support Files/Pods-NewPractice/Pods-NewPractice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 		8473305E26DF7102000CC708 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				8473305F26DF7102000CC708 /* ok.json */,
+				8473306126E09F97000CC708 /* ok.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -819,7 +819,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05A39712327563D00091A1A /* Sticker.bundle in Resources */,
-				8473306026DF7102000CC708 /* ok.json in Resources */,
+				8473306226E09F97000CC708 /* ok.json in Resources */,
 				C05A39722327563D00091A1A /* InnerStickersInfo.plist in Resources */,
 				C0CDD72C22FA83BA000FE238 /* LaunchScreen.storyboard in Resources */,
 				C0BA5A3E2320E41000814239 /* RITLPhotos.bundle in Resources */,
