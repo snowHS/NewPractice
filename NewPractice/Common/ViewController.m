@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Catalogue";
-    self.titleArray = [@[@"MLife",@"Lottie",@"图片缩放",@"表情键盘",@"图片多选",@"本地通知"] mutableCopy];
+    self.titleArray = [@[@"MLife",@"Lottie动画",@"图片缩放",@"表情键盘",@"图片多选",@"本地通知"] mutableCopy];
     self.vcArray = [@[@"MLifeViewController",@"LottieController",@"ImgScaleViewController",@"EmojiKBViewController",@"PhotosViewController",@"LocationNotiViewController"] mutableCopy];
     
     [self initTabView];
@@ -73,6 +73,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     BaseViewController * nextVC = [[NSClassFromString(self.vcArray[indexPath.row]) alloc] init];
+    nextVC.title = self.titleArray[indexPath.row];
     [self.navigationController pushViewController:nextVC animated:YES];
 }
 @end
