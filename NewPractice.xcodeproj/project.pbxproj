@@ -10,6 +10,8 @@
 		18D189316F702019658C3017 /* libPods-NewPractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13265F9896734788C43FFED9 /* libPods-NewPractice.a */; };
 		2D81DEDC7AE923BC99F0F7B4 /* libPods-NewPracticeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D5D60BF7358EB41CFED0A4 /* libPods-NewPracticeTests.a */; };
 		4537A3C2EAC089010DECB881 /* libPods-NewPracticeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBF99557379CA224133F36F /* libPods-NewPracticeUITests.a */; };
+		846AD0A526DF65C800DBDCA6 /* LottieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846AD0A426DF65C800DBDCA6 /* LottieController.m */; };
+		8473306026DF7102000CC708 /* ok.json in Resources */ = {isa = PBXBuildFile; fileRef = 8473305F26DF7102000CC708 /* ok.json */; };
 		C01D43072325E4780029D847 /* EmojiKBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C01D43062325E4780029D847 /* EmojiKBViewController.m */; };
 		C01D436923265A670029D847 /* PPQueuingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C01D434423265A670029D847 /* PPQueuingScrollView.m */; };
 		C01D436A23265A670029D847 /* NSAttributedString+PPAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C01D434523265A670029D847 /* NSAttributedString+PPAddition.m */; };
@@ -105,6 +107,9 @@
 		13265F9896734788C43FFED9 /* libPods-NewPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D29BDCB2982571F3CA84E66 /* Pods-NewPracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewPracticeUITests.debug.xcconfig"; path = "Target Support Files/Pods-NewPracticeUITests/Pods-NewPracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		60DFCE4459F0B00A12B77BA9 /* Pods-NewPracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewPracticeTests.debug.xcconfig"; path = "Target Support Files/Pods-NewPracticeTests/Pods-NewPracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		846AD0A326DF65C800DBDCA6 /* LottieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieController.h; sourceTree = "<group>"; };
+		846AD0A426DF65C800DBDCA6 /* LottieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieController.m; sourceTree = "<group>"; };
+		8473305F26DF7102000CC708 /* ok.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ok.json; sourceTree = "<group>"; };
 		8FDEFB83261BC6F0177BADE1 /* Pods-NewPracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewPracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-NewPracticeUITests/Pods-NewPracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9DFBD48CC1359707B0DC0FAF /* Pods-NewPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewPractice.release.xcconfig"; path = "Target Support Files/Pods-NewPractice/Pods-NewPractice.release.xcconfig"; sourceTree = "<group>"; };
 		A459935D35B145F2C0717D77 /* Pods-NewPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewPractice.debug.xcconfig"; path = "Target Support Files/Pods-NewPractice/Pods-NewPractice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -313,6 +318,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		846AD0A226DF656A00DBDCA6 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				846AD0A326DF65C800DBDCA6 /* LottieController.h */,
+				846AD0A426DF65C800DBDCA6 /* LottieController.m */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		8473305E26DF7102000CC708 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8473305F26DF7102000CC708 /* ok.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		C01D43042325E4460029D847 /* EmojiKeyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +409,7 @@
 		C020090022FC39EE00ABBF5B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				846AD0A226DF656A00DBDCA6 /* Applications */,
 				C01E98D02340A19D00FD684D /* ScaleImage */,
 				C01D43042325E4460029D847 /* EmojiKeyboard */,
 				C0F51C5623151AED00950734 /* Others */,
@@ -634,9 +657,10 @@
 		C0CDD71E22FA83B9000FE238 /* NewPractice */ = {
 			isa = PBXGroup;
 			children = (
-				C0CDD72822FA83BA000FE238 /* Assets.xcassets */,
 				C020090022FC39EE00ABBF5B /* Classes */,
 				C0CDD75422FAD49C000FE238 /* Common */,
+				8473305E26DF7102000CC708 /* Resource */,
+				C0CDD72822FA83BA000FE238 /* Assets.xcassets */,
 				C0CDD72D22FA83BA000FE238 /* Info.plist */,
 				C0CDD72A22FA83BA000FE238 /* LaunchScreen.storyboard */,
 				C0CDD72E22FA83BA000FE238 /* main.m */,
@@ -753,7 +777,7 @@
 		C0CDD71422FA83B9000FE238 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = SL123;
 				TargetAttributes = {
 					C0CDD71B22FA83B9000FE238 = {
@@ -795,6 +819,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05A39712327563D00091A1A /* Sticker.bundle in Resources */,
+				8473306026DF7102000CC708 /* ok.json in Resources */,
 				C05A39722327563D00091A1A /* InnerStickersInfo.plist in Resources */,
 				C0CDD72C22FA83BA000FE238 /* LaunchScreen.storyboard in Resources */,
 				C0BA5A3E2320E41000814239 /* RITLPhotos.bundle in Resources */,
@@ -921,6 +946,7 @@
 				C02F22D3230168AC00F1AE54 /* FirstBaseViewController.m in Sources */,
 				C0BA5A332320E41000814239 /* PHFetchResult+RITLPhotos.m in Sources */,
 				C0BA5A392320E41000814239 /* RITLPhotosBrowseVideoCell.m in Sources */,
+				846AD0A526DF65C800DBDCA6 /* LottieController.m in Sources */,
 				C01D436C23265A670029D847 /* UIScrollView+PPAddition.m in Sources */,
 				C0BA5A2E2320E41000814239 /* NSString+RITLPhotos.m in Sources */,
 				C01D437023265A670029D847 /* PPSlideLineButton.m in Sources */,
@@ -1035,6 +1061,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1060,7 +1087,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1094,6 +1121,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1113,7 +1141,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1126,13 +1154,14 @@
 			baseConfigurationReference = A459935D35B145F2C0717D77 /* Pods-NewPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaolong liu (CDHQJUTAGN)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PFQWM8GYU8;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NewPractice/Common/NewPractice.pch;
 				INFOPLIST_FILE = NewPractice/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1150,13 +1179,14 @@
 			baseConfigurationReference = 9DFBD48CC1359707B0DC0FAF /* Pods-NewPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaolong liu (CDHQJUTAGN)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = PFQWM8GYU8;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NewPractice/Common/NewPractice.pch;
 				INFOPLIST_FILE = NewPractice/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

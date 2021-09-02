@@ -12,6 +12,8 @@
 #import "LocationNotiViewController.h"
 #import "EmojiKBViewController.h"
 #import "ImgScaleViewController.h"
+#import "LottieController.h"
+
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) UITableView *myTab;
 @property (strong, nonatomic) NSMutableArray *titleArray;
@@ -25,8 +27,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Catalogue";
-    self.titleArray = [@[@"MLife",@"图片缩放",@"表情键盘",@"图片多选",@"本地通知"] mutableCopy];
-    self.vcArray = [@[@"MLifeViewController",@"ImgScaleViewController",@"EmojiKBViewController",@"PhotosViewController",@"LocationNotiViewController"] mutableCopy];
+    self.titleArray = [@[@"MLife",@"Lottie",@"图片缩放",@"表情键盘",@"图片多选",@"本地通知"] mutableCopy];
+    self.vcArray = [@[@"MLifeViewController",@"LottieController",@"ImgScaleViewController",@"EmojiKBViewController",@"PhotosViewController",@"LocationNotiViewController"] mutableCopy];
     
     [self initTabView];
     [self.myTab reloadData];

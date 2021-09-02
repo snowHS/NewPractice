@@ -9,6 +9,7 @@
 #import "BaseViewController.h"
 #import "HttpDefine.h"
 #import "MyNavigationController.h"
+#import "StaticTools.h"
 @interface BaseViewController ()
 
 @end
